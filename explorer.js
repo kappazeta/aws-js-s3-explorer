@@ -1,4 +1,5 @@
 // Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// Adopted with minor changes for use in KappaZeta Ltd., 2021.
 //
 // Licensed under the Apache License, Version 2.0 (the "License").
 //
@@ -928,6 +929,9 @@ function SettingsController($scope, SharedService) {
     $scope.settings.mfa = { use: 'no', code: '' };
     $scope.settings.cred = { accessKeyId: '', secretAccessKey: '', sessionToken: '' };
     $scope.settings.stscred = null;
+
+    // Take query parameters and request AWS credentials.
+    processAWSQueryParams($scope);
 
     // TODO: at present the Settings dialog closes after credentials have been supplied
     // even if the subsequent AWS calls fail with networking or permissions errors. It

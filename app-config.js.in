@@ -1,0 +1,12 @@
+// Make a copy of the template
+//   cp app-config.js.in app-config.js
+// Fill in with the values from your Amazon Cognito Console.
+var config = {
+    region: "eu-central-1",
+    cognitoDomain: "kz",
+    userPoolId: "YourAmazonCognitoUserPoolID",
+    identPoolId: "YourAmazonCognitoIdentityPoolID",
+    appClientId: "YourAmazonCognitoAppClientID",
+    signinCallback: "https://demodev.kappazeta.ee/s3/",
+    bucket: "s1-derivatives"
+}

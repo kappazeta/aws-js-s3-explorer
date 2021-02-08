@@ -1,6 +1,7 @@
-# AWS JavaScript S3 Explorer (v2 alpha)
+# AWS JavaScript S3 Explorer (KappaZeta version)
 
 Note: if you are looking for the original, view-only version of this tool then please visit the [S3 Explorer](https://github.com/awslabs/aws-js-s3-explorer) page.
+If you are looking for the original read-write version of this tool then please visit the [S3 Explorer (v2 alpha)](https://github.com/awslabs/aws-js-s3-explorer/tree/v2-alpha) page.
 
 AWS JavaScript S3 Explorer (v2 alpha) is a JavaScript application that uses AWS's JavaScript SDK and S3 APIs to make the contents of an S3 bucket easy to browse via a web browser. We've created this to enable easier sharing and management of objects and data in Amazon S3.
 
@@ -56,6 +57,12 @@ Bucket information:
 [bucket-info]: https://raw.githubusercontent.com/awslabs/aws-js-s3-explorer/v2-alpha/screenshots/explorer-info.png
 
 ## Deployment and Use
+
+Before deployment, make a copy of `app-config.js.in` and fill in the parameters from your Amazon Cognito Console.
+
+```
+cp app-config.js.in app-config.js
+```
 
 Note that in the general case, you are working with two distinct S3 buckets:
 

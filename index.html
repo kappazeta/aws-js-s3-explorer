@@ -100,7 +100,8 @@ permissions and limitations under the License.
                                         </div>
                                         <div class="input-group bottom-marg-10" ng-hide="settings.auth=='anon'">
                                             <span class="input-group-addon">Secret Access Key</span>
-                                            <input name="secretkey" type="password" ng-model="settings.cred.secretAccessKey" class="form-control" ng-disabled="settings.auth=='anon'" placeholder="secret access key" required/>
+					    <!--<input name="secretkey" type="password" ng-model="settings.cred.secretAccessKey" class="form-control" ng-disabled="settings.auth=='anon'" placeholder="secret access key" required/>-->
+                                            <input name="secretkey" type="text" ng-model="settings.cred.secretAccessKey" class="form-control" ng-disabled="settings.auth=='anon'" placeholder="secret access key" required/>
                                         </div>
                                         <div class="input-group bottom-marg-10" ng-show="settings.auth=='temp'">
                                             <span class="input-group-addon">Session Token</span>
@@ -536,4 +537,6 @@ Please see the project <a target="_blank" href="https://github.com/awslabs/aws-j
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+<script src="app-config.js"></script>
+<script src="aws-credentials.js"></script>
 <script src="explorer.js"></script>
