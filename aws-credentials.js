@@ -35,8 +35,6 @@ function reqKeys($scope, id_token, region, identPoolId) {
     var loginMap = {};
     loginMap[poolAddr] = id_token;
    
-    console.log($scope.settings);
-
     AWS.config.region = region;
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         IdentityPoolId: identPoolId,
