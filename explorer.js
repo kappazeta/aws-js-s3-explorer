@@ -1481,5 +1481,6 @@ $(document).ready(() => {
     // Initialize the moment library (for time formatting utilities) and
     // launch the initial Settings dialog requesting bucket & credentials.
     moment().format();
-    $('#SettingsModal').modal({ keyboard: true, backdrop: 'static' });
+    // Don't show the settings modal while loading the page.
+    // $('#SettingsModal').modal({ keyboard: true, backdrop: 'static' });
 });
